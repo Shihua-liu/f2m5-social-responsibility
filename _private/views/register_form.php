@@ -1,4 +1,4 @@
-<?php $this->layout('website')?>
+<?php $this->layout('layouts::website')?>
 
 <h3>inschrijven</h3>
 

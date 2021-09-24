@@ -15,7 +15,7 @@ class registratiecontroller {
 	public function registerform() {
 
 		$template_engine = get_template_engine();
-		echo $template_engine->render('homepage');
+		echo $template_engine->render('register_form');
 
 	}
 }
