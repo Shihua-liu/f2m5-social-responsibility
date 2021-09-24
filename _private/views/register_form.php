@@ -2,7 +2,7 @@
 
 <h3>inschrijven</h3>
 
-<form action="" method="POST">
+<form action="<?php echo url("register.handle")?>" method="POST">
     <div class="form-group">
         <label for="voornaam">voornaam</label>
         <input type="text" name="firstnaam" value="" class="form-control" id="voornaam">

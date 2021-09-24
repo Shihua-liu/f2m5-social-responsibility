@@ -18,5 +18,8 @@ class registratiecontroller {
 		echo $template_engine->render('register_form');
 
 	}
+	public function registerprocess() {
+		echo ("FORM komt er aan!!");
+	}
 }
 
