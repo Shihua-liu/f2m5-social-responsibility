@@ -19,5 +19,9 @@ class WebsiteController {
 
 	}
 
+	public function shihua() {
+		echo 'dit is een test line';
+	}
+
 }
 
