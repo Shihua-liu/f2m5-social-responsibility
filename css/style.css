@@ -76,6 +76,10 @@ footer {
     background: rgba(0, 13, 39);
 }
 
+.submit-btn{
+    background: rgb(162, 184, 232);
+}
+
 @media screen and (min-width: 900px) {
     main {
         grid-template-columns: 1fr 350px;
