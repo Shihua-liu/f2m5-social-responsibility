@@ -34,7 +34,7 @@ Zo kun je makkelijker aanpassingen doen aan je website als deze ingewikkelder wo
   
 Lees de documentatie: [http://platesphp.com/](http://platesphp.com/)
  
-
-team repository: https://github.com/Shihua-liu/f2m5-team.git
+#### live versie: http://31684.hosts1.ma-could.nl/f2m5-social-responsibility/index.php
+#### team repository: https://github.com/Shihua-liu/f2m5-team.git
  
  
