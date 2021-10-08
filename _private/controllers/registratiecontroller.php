@@ -12,7 +12,7 @@ use Error;
  * Geeft de gegevens aan de "view" laag (HTML template) om weer te geven
  *
  */
-class registratiecontroller {
+class RegistratieController {
 
 	public function registerform() {
 
@@ -23,6 +23,8 @@ class registratiecontroller {
 	public function registerprocess() {
 		
 		$error = [];
+		$voornaam = trim ($_POST['voornaam']);
+		$achternaam = trim ($_POST['achtenaam']);
 		$email = filter_var ($_POST['email'], FILTER_VALIDATE_EMAIL);
 		$wachtwoord = trim ($_POST['wachtwoord']);
 
@@ -42,10 +44,12 @@ class registratiecontroller {
 		}
 
 		if ($statement->rowCount() === 0){
-			$sql = "INSERT INTO 'gebruikers' ('email', 'wachtwoord') VALUES (:email, :wachtwoord)";
+			$sql = "INSERT INTO 'gebruikers' ('voornaam','achternaam', 'email', 'wachtwoord') VALUES (:voornaam, :achternaam, :email, :wachtwoord)";
 			$statement = $connection->prepare($sql);
 			$safe_password = password_hash($wachtwoord, PASSWORD_DEFAULT);
 			$params =[
+				'voornaam' => $voornaam,
+				'achternaam' => $achternaam,
 				'email' => $email,
 				'wachtwoord' => $safe_password
 			];

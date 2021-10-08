@@ -2,7 +2,7 @@
 
 body {
     font-family: "Nunito", "Open Sans", Arial, Helvetica, sans-serif;
-    background: rgba(20, 58, 135, 0.8);
+    background: rgba(65, 66, 68, 0.8);
 }
 
 main {
@@ -24,7 +24,7 @@ header h1 {
 
 nav {
     padding: 20px;
-    background: rgb(162, 184, 232);
+    background: rgb(6, 60, 177);
     color: #fff;
 }
 
@@ -77,7 +77,7 @@ footer {
 }
 
 .submit-btn{
-    background: rgb(162, 184, 232);
+    background: rgb(81, 127, 226);
 }
 
 @media screen and (min-width: 900px) {
